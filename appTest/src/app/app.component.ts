@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  title = 'appTest';
+  isDisable = false;
+  name: string;
+  onClick(){
+    if(this.isDisable === true){
+      this.isDisable = false
+    }else{
+      this.isDisable = true
+    }
+  }
 }
